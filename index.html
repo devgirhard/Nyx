@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#04050a">
+  <meta name="description" content="NYX: comunidade no WhatsApp. Entre no canal oficial.">
+  <title>NYX — Comunidade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ INÍCIO ============ -->
+<header class="hero" id="inicio">
+  <img class="hero__img" src="anjo.jpg" alt="Anjo digital pixelado com asas brilhantes diante de telas de monitoramento" fetchpriority="high">
+  <div class="hero__shade"></div>
+  <div class="hero__body">
+    <h1 class="glitch" data-text="NYX">NYX</h1>
+    <p class="lead">A comunidade que acorda quando a cidade dorme. Entre no canal oficial e fique por dentro de tudo.</p>
+    <a class="btn btn--main" href="https://whatsapp.com/channel/0029VbE1Rg80wajoaHKdtN2T" target="_blank" rel="noopener noreferrer">SEGUIR CANAL NYX</a>
+  </div>
+</header>
+
+<main>
+  <!-- ============ SOBRE ============ -->
+  <section class="sec" id="sobre" aria-labelledby="t-sobre">
+    <h2 id="t-sobre">Sobre a comunidade</h2>
+    <!-- EDITAR: troque o texto abaixo pela descrição oficial da NYX -->
+    <p>A NYX reúne pessoas que gostam do lado escuro e tecnológico da internet: estética, cultura digital e conversa de madrugada. O canal oficial no WhatsApp é onde as novidades aparecem primeiro.</p>
+    <div class="gallery">
+      <figure class="tile tile--wide"><img src="olho.jpg" alt="Olho com grade de leitura biométrica em verde" loading="lazy"><figcaption>Observamos tudo</figcaption></figure>
+      <figure class="tile tile--red"><img src="demonio.jpg" alt="Silhueta de demônio com olhos vermelhos e espada" loading="lazy"><figcaption>Sem medo do escuro</figcaption></figure>
+      <figure class="tile"><img src="esqueleto.jpg" alt="Esqueleto com descargas elétricas" loading="lazy"><figcaption>Energia de sobra</figcaption></figure>
+      <figure class="tile tile--wide"><img src="coringa.jpg" alt="Personagem de desenho sorrindo, em preto e branco, com a frase Why so serious escrita ao fundo" loading="lazy"><figcaption>Aqui ninguém leva tudo a sério</figcaption></figure>
+    </div>
+    <a class="btn" href="https://whatsapp.com/channel/0029VbE1Rg80wajoaHKdtN2T" target="_blank" rel="noopener noreferrer">CONHECER A NYX</a>
+  </section>
+
+  <!-- ============ CANAL OFICIAL ============ -->
+  <section class="sec sec--canal" id="canal" aria-labelledby="t-canal">
+    <h2 id="t-canal">Canal oficial</h2>
+    <p>Todos os avisos da NYX saem no canal do WhatsApp. Toque, entre e ative as notificações.</p>
+    <a class="btn btn--main btn--big" href="https://whatsapp.com/channel/0029VbE1Rg80wajoaHKdtN2T" target="_blank" rel="noopener noreferrer">ENTRAR NA COMUNIDADE</a>
+  </section>
+
+  <!-- ============ IDENTIFICAÇÃO ============ -->
+  <section class="sec" id="identificacao" aria-labelledby="t-id">
+    <h2 id="t-id">Identifique-se</h2>
+    <form id="form-id" class="form" novalidate>
+      <label>Nome<input type="text" name="nome" autocomplete="name" required maxlength="60"></label>
+      <label>Número de WhatsApp<input type="tel" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(62) 90000-0000" required maxlength="20"></label>
+      <label class="consent"><input type="checkbox" name="consentimento" required> Autorizo o uso do meu nome e número para identificação e contato sobre a comunidade NYX. Li o aviso de privacidade.</label>
+      <p class="note">Pedimos apenas nome e número de WhatsApp. Seus dados serão armazenados para a finalidade informada e o administrador receberá uma notificação. Não pedimos senha, CPF ou endereço.</p>
+      <p class="msg" role="status" aria-live="polite"></p>
+      <button class="btn" type="submit">ENVIAR</button>
+    </form>
+  </section>
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="foot">
+  <strong class="foot__logo">NYX</strong>
+  <a href="https://whatsapp.com/channel/0029VbE1Rg80wajoaHKdtN2T" target="_blank" rel="noopener noreferrer">Canal oficial no WhatsApp</a>
+  <small>© <span id="ano">2026</span> NYX. Todos os direitos reservados.</small>
+</footer>
+
+<!-- Barra fixa de acesso rápido no celular -->
+<a class="dock" href="https://whatsapp.com/channel/0029VbE1Rg80wajoaHKdtN2T" target="_blank" rel="noopener noreferrer">ENTRAR NA COMUNIDADE</a>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
